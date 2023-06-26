@@ -1,2 +1,2 @@
 # platania_ufs06_b
-Esame Java Avanzato
+Esame UFS06, Java Avanzato, traccia C.
