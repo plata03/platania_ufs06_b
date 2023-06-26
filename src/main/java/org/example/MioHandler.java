@@ -32,12 +32,12 @@ public class MioHandler implements HttpHandler {
                 "<body>\n" +
                 "</br>query:" +
                 "<table style='border-style: solid'>\n" +
-                "<tr>\n" +
-                "<th>" + "Description" + "</th>" +
-                "<th>" + "Id" + "</th>" +
-                "<th>" + "Name" + "</th>" +
-                "<th>" + "Value" + "</th>" +
-                "<th>" + "Is Suite?" + "</th>" +
+                "<tr style='border-style: solid'>\n" +
+                "<th style='border-style: solid'>" + "Description" + "</th>" +
+                "<th style='border-style: solid'>" + "Id" + "</th>" +
+                "<th style='border-style: solid'>" + "Name" + "</th>" +
+                "<th style='border-style: solid'>" + "Price" + "</th>" +
+                "<th style='border-style: solid'>" + "Is it Suite?" + "</th>" +
                 "</tr>\n" +
                 myAnswer +
                 "</table>\n" +

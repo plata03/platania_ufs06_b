@@ -28,11 +28,11 @@ public class GestioneAlberghi {
         for (Albergo albergo:
                 hotelList) {
             s += (
-                    "<td>" + albergo.getDesc() + "</td>" +
-                    "<td>" + albergo.getId() + "</td>" +
-                            "<td>" + albergo.getName() + "</td>" +
-                            "<td>" + albergo.getPrice() + "</td>" +
-                            "<td>" + albergo.isSuite() + "</td>" +
+                    "<td style='border-style: solid'>" + albergo.getDesc() + "</td>" +
+                    "<td style='border-style: solid'>" + albergo.getId() + "</td>" +
+                            "<td style='border-style: solid'>" + albergo.getName() + "</td>" +
+                            "<td style='border-style: solid'>" + albergo.getPrice() + "</td>" +
+                            "<td style='border-style: solid'>" + albergo.isSuite() + "</td>" +
                             "</tr>\n"
             );
         }
@@ -59,12 +59,12 @@ public class GestioneAlberghi {
             }
         }
 
-        String s = "<tr>"+
-                "<td>" + mostExpensive.getDesc() + "</td>" +
-                "<td>" + mostExpensive.getId() + "</td>" +
-                "<td>" + mostExpensive.getName() + "</td>" +
-                "<td>" + mostExpensive.getPrice() + "</td>" +
-                "<td>" + mostExpensive.isSuite() + "</td>" +
+        String s = "<tr style='border-style: solid'>"+
+                "<td style='border-style: solid'>" + mostExpensive.getDesc() + "</td>" +
+                "<td style='border-style: solid'>" + mostExpensive.getId() + "</td>" +
+                "<td style='border-style: solid'>" + mostExpensive.getName() + "</td>" +
+                "<td style='border-style: solid'>" + mostExpensive.getPrice() + "</td>" +
+                "<td style='border-style: solid'>" + mostExpensive.isSuite() + "</td>" +
                 "</tr>\n";
 
         return s;
@@ -83,11 +83,11 @@ public class GestioneAlberghi {
         for (Albergo albergo:
                 listCopy) {
             s += (
-                    "<td>" + albergo.getDesc() + "</td>" +
-                    "<td>" + albergo.getId() + "</td>" +
-                            "<td>" + albergo.getName() + "</td>" +
-                            "<td>" + albergo.getPrice() + "</td>" +
-                            "<td>" + albergo.isSuite() + "</td>" +
+                    "<td style='border-style: solid'>" + albergo.getDesc() + "</td>" +
+                    "<td style='border-style: solid'>" + albergo.getId() + "</td>" +
+                            "<td style='border-style: solid'>" + albergo.getName() + "</td>" +
+                            "<td style='border-style: solid'>" + albergo.getPrice() + "</td>" +
+                            "<td style='border-style: solid'>" + albergo.isSuite() + "</td>" +
                             "</tr>\n"
             );
         }
