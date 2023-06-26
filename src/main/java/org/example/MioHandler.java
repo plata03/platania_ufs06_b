@@ -27,11 +27,11 @@ public class MioHandler implements HttpHandler {
                 "<html lang=en>\n" +
                 "<head>\n" +
                 "<meta charset=utf-8>\n" +
-                "<title>MyJava Sample</title>\n" +
+                "<title>MyExam</title>\n" +
                 "</head>\n" +
                 "<body>\n" +
                 "</br>query:" +
-                "<table>\n" +
+                "<table style='border-style: solid'>\n" +
                 "<tr>\n" +
                 "<th>" + "Description" + "</th>" +
                 "<th>" + "Id" + "</th>" +

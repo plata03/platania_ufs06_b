@@ -13,7 +13,7 @@ public class RequestHandler {
         return INSTANCE;
     }
 
-    String[] cmdList = {"more_expensive_suite", "all", "all_sorted"};
+    //String[] cmdList = {"more_expensive_suite", "all", "all_sorted"};
 
     public String getAction(String inCmd) {
         String output = "";
