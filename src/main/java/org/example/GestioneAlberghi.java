@@ -9,7 +9,7 @@ public class GestioneAlberghi {
     private List<Albergo> hotelList = new ArrayList();
 
     private GestioneAlberghi() {
-        hotelList.add(new Albergo("Questo hotel...", 3, "Trivago", 12000, true));
+        hotelList.add(new Albergo("Questo terrificante hotel...", 3, "Trivago", 12000, true));
         hotelList.add(new Albergo("Quel bellissimo hotel...", 5, "Gran ses- sasso!", 13000, true));
         hotelList.add(new Albergo("Codesto albergo...", 4, "Dolomiti", 10000, true));
         hotelList.add(new Albergo("Sulla panca la capra...", 8, "Marina", 19000, false));
