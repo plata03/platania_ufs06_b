@@ -18,7 +18,7 @@ public class RequestHandler {
         String output = "";
 
         switch (inCmd) {
-            case "more_expensive":
+            case "more_expensive_suite":
                 output = GestioneAlberghi.getInstance().getExpensive();
                 break;
 

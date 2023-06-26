@@ -21,7 +21,7 @@ public class App
         }
 
         server.createContext("/", new MioHandler());
-        server.setExecutor(null); // creates a default executor
+        server.setExecutor(null);
         server.start();
     }
 }
