@@ -13,7 +13,6 @@ public class RequestHandler {
         return INSTANCE;
     }
 
-    //String[] cmdList = {"more_expensive_suite", "all", "all_sorted"};
 
     public String getAction(String inCmd) {
         String output = "";
@@ -32,7 +31,7 @@ public class RequestHandler {
                 break;
 
             default:
-                output = "<p>Error! Command not found!</p>";
+                output = "<p style='color: red'>Error! Command not found!</p>";
                 break;
         }
 

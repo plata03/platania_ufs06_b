@@ -10,7 +10,7 @@ public class GestioneAlberghi {
 
     private GestioneAlberghi() {
         hotelList.add(new Albergo("Questo hotel...", 3, "Trivago", 12000, true));
-        hotelList.add(new Albergo("Quel bellissimo hotel...", 5, "Gran se- sasso!", 13000, true));
+        hotelList.add(new Albergo("Quel bellissimo hotel...", 5, "Gran ses- sasso!", 13000, true));
         hotelList.add(new Albergo("Codesto albergo...", 4, "Dolomiti", 10000, true));
         hotelList.add(new Albergo("Sulla panca la capra...", 8, "Marina", 19000, false));
     }
@@ -24,15 +24,21 @@ public class GestioneAlberghi {
 
     public String getAll() {
         String s = "<tr>";
+        String isSuite = "";
 
         for (Albergo albergo:
                 hotelList) {
+            if(albergo.isSuite()) {
+                 isSuite = "Yes";
+            } else {
+                 isSuite = "No";
+            }
             s += (
                     "<td style='border-style: solid'>" + albergo.getDesc() + "</td>" +
                     "<td style='border-style: solid'>" + albergo.getId() + "</td>" +
                             "<td style='border-style: solid'>" + albergo.getName() + "</td>" +
                             "<td style='border-style: solid'>" + albergo.getPrice() + "</td>" +
-                            "<td style='border-style: solid'>" + albergo.isSuite() + "</td>" +
+                            "<td style='border-style: solid'>" + isSuite + "</td>" +
                             "</tr>\n"
             );
         }
@@ -58,13 +64,18 @@ public class GestioneAlberghi {
 
             }
         }
-
+        String isSuite = "";
+        if(mostExpensive.isSuite()) {
+            isSuite = "Yes";
+        } else {
+            isSuite = "No";
+        }
         String s = "<tr style='border-style: solid'>"+
                 "<td style='border-style: solid'>" + mostExpensive.getDesc() + "</td>" +
                 "<td style='border-style: solid'>" + mostExpensive.getId() + "</td>" +
                 "<td style='border-style: solid'>" + mostExpensive.getName() + "</td>" +
                 "<td style='border-style: solid'>" + mostExpensive.getPrice() + "</td>" +
-                "<td style='border-style: solid'>" + mostExpensive.isSuite() + "</td>" +
+                "<td style='border-style: solid'>" + isSuite + "</td>" +
                 "</tr>\n";
 
         return s;
@@ -79,15 +90,21 @@ public class GestioneAlberghi {
         });
 
         String s = "<tr>";
+        String isSuite = "";
 
         for (Albergo albergo:
                 listCopy) {
+            if(albergo.isSuite()) {
+                isSuite = "Yes";
+            } else {
+                isSuite = "No";
+            }
             s += (
                     "<td style='border-style: solid'>" + albergo.getDesc() + "</td>" +
                     "<td style='border-style: solid'>" + albergo.getId() + "</td>" +
                             "<td style='border-style: solid'>" + albergo.getName() + "</td>" +
                             "<td style='border-style: solid'>" + albergo.getPrice() + "</td>" +
-                            "<td style='border-style: solid'>" + albergo.isSuite() + "</td>" +
+                            "<td style='border-style: solid'>" + isSuite + "</td>" +
                             "</tr>\n"
             );
         }
