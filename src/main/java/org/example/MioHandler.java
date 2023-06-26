@@ -29,8 +29,9 @@ public class MioHandler implements HttpHandler {
                 "<meta charset=utf-8>\n" +
                 "<title>MyExam</title>\n" +
                 "</head>\n" +
-                "<body>\n" +
-                "</br>query:" +
+                "<body style='margin-left: 35%'>\n" +
+                "<h1 style='color: green'> ilPlataHotel </h1> \n" +
+                "</br>query result:" +
                 "<table style='border-style: solid'>\n" +
                 "<tr style='border-style: solid'>\n" +
                 "<th style='border-style: solid'>" + "Description" + "</th>" +
