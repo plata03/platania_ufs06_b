@@ -70,22 +70,23 @@ public class GestioneAlberghi {
     }
 
     public String getSorted() {
-        List<Car> listCopy = new ArrayList<>();
-        listCopy.addAll(carList);
+        List<Albergo> listCopy = new ArrayList<>();
+        listCopy.addAll(hotelList);
 
         listCopy.sort((o1, o2) -> {
-            return o1.getBrand().compareTo(o2.getBrand());
+            return o1.getName().compareTo(o2.getName());
         });
 
         String s = "<tr>";
 
-        for (Car car:
+        for (Albergo albergo:
                 listCopy) {
             s += (
-                    "<td>" + car.getId() + "</td>" +
-                            "<td>" + car.getBrand() + "</td>" +
-                            "<td>" + car.getValue() + "</td>" +
-                            "<td>" + car.getQty() + "</td>" +
+                    "<td>" + albergo.getDesc() + "</td>" +
+                    "<td>" + albergo.getId() + "</td>" +
+                            "<td>" + albergo.getName() + "</td>" +
+                            "<td>" + albergo.getPrice() + "</td>" +
+                            "<td>" + albergo.isSuite() + "</td>" +
                             "</tr>\n"
             );
         }
