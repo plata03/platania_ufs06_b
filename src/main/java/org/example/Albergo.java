@@ -1,5 +1,5 @@
 package org.example;
-//test
+
 public class Albergo {
 
     protected String desc;
