@@ -31,7 +31,12 @@ public class RequestHandler {
                 break;
 
             default:
-                output = "<p style='color: red'>Error! Command not found!</p>";
+                output = "<p style='color: red'>Error! Command not found!</p> \n"+
+                         "<p> Try with one of these instead: </p> \n" +
+                         "<ul> \n" +
+                         "<li> all </li> \n" +
+                         "<li> all_sorted </li> \n" +
+                         "<li> more_expensive_suite </li> </ul> \n";
                 break;
         }
 
